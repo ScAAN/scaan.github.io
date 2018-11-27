@@ -14,12 +14,13 @@ function showInfo(data, tabletop) {
 	console.log(data);
 
 	var table = new Tabulator("#paperbag_table", {
-		layout:"fitColumns",
+		responsiveLayoutCollapseStartOpen:false,
+		responsiveLayout:"collapse",
 		tooltips:true,
 		addRowPos:"top",
 		history:true,
 		pagination:"local",
-		paginationSize:7,
+		paginationSize:20,
 		movableColumns:true,
 		resizableRows:true,
 		data:data,
@@ -27,8 +28,9 @@ function showInfo(data, tabletop) {
 			{column:"name", dir:"asc"},
 		],
 		columns:[
-			{title:"Date of study", field:"Date of study"},
-			{title:"Locale", field:"Locale"},
+			{formatter:"responsiveCollapse", headerSort:false},
+			{title:"Date of study", field:"Date of study", responsive:0},
+			{title:"Locale", field:"Locale", responsive:0},
 			{title:"Study Author", field:"Study Author"},
 			{title:"Date that ordinance came into effect", field:"Date that ordinance came into effect"},
 			{title:"Type", field:"Type"},
