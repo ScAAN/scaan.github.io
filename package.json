@@ -1,0 +1,26 @@
+{
+  "name": "scaan.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conormcgrory/scaan.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/conormcgrory/scaan.github.io/issues"
+  },
+  "homepage": "https://github.com/conormcgrory/scaan.github.io#readme",
+  "dependencies": {
+    "tabletop": "^1.5.2",
+    "tabulator-tables": "^4.0.5"
+  }
+}
